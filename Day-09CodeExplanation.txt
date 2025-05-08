@@ -1,0 +1,35 @@
+This is a  program  which was designed as part of my "30-Day Python Challenge." 
+
+1. show_intro(): 
+   - This Function to represent introduction of this assignment / Project. Starting with a little welcome message.
+
+2. Immutable Settings using Tuples:
+   - screenResolution: A tuple (1920, 1080) representing the width and height of the screen resolution. Tuples are used here because these values are intended to be immutable (unchangeable).
+   - movementKeys: A tuple ("W", "A", "S", "D") representing the movement keys, typically used in gaming for movements (Forward, Left, Back, right).
+   - difficultyModes: A tuple ("Easy", "Medium", "Hard", "Insane") listing available game difficulty levels.
+
+3. display_settings():
+   - This function prints the current game settings to the terminal. It uses the join method to convert the tuples into comma-separated strings to display.
+   - It also explains that these settings are defined as tuples, trying to change them will lead to a TypeError (representing Immutability).
+
+4. try_to_change_resolution():
+   - This function demonstrates what happens when you try to change a value in a tuple. It attempts to change the first element of screenResolution from 1920 to 1280.
+   - So, tuples are immutable, this operation raises a TypeError, and displays an error msg.
+
+5. main():
+   - This function calls the show_intro(), display_settings() and try_to_change_resolution() functions to start execution of program.
+
+6. Starting point:
+   - The script includes a classic Python entry point check (if __name__ == "__main__":) to ensure that the main function is only executed when the script is run directly, not when it is imported as a module in another script.
+
+What I've learnt:
+- Tuples: Python tuples are a type of sequence data structure, which means stores the data in sequence manner with 0-index based.
+- Tuples are represented in ( ).
+- Tuples are ordered,Immutable and allows duplicates.
+- Immutable means in tuples we can't change their content, i.e It won't allows modifying, adding, removing elements.
+- Tuples can store multiple datatypes like integer, float, complex, boolean ... nested tuples also.
+- For single item tuple must include comma, else python considers it as an integer. i.e Single = (5,)
+- So, finally tuples are faster and memory efficient, used when data to stay constant, faster than lists, Hashable(can be used as a dictionary keys),
+  better for fixed data, supports unpacking and light-weight for function returns.
+- Some disadvantages of tuples are; Immutable (cannot add, remove and change elements), has fewer built-in methods, not ideal for dynamic data, 
+  no built-in search or manipulation methods and can be less readable.
